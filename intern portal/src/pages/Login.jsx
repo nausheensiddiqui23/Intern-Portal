@@ -6,5 +6,11 @@ export default function Login() {
 
     const handleLogin = () => {
         navigate("/dashboard");
-    }
+    };
+    return (
+        <div>
+            <h2>Intern Login</h2>
+            <button onClick={handleLogin}>Login as Nausheen</button>
+        </div>
+    );
 }
