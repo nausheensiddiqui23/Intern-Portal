@@ -16,7 +16,7 @@ return (
         <h1>Welcome, {data.name}</h1>
         <p><strong>Referral Code:</strong> {data.referralCode}</p>
         <p><strong>Total Donations: </strong>₹{data.donations}</p>
-
+        <h3>🎁 Rewards / Unlockables</h3>
 
     </div>
 )
