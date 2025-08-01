@@ -11,6 +11,14 @@ useEffect (()=> {
     .catch(err => console.error(err));
 }, []);
 
+return (
+    <div>
+        <h1>Welcome, {data.name}</h1>
+        <p><strong>Referral Code:</strong> {data.referralCode}</p>
+        <p><strong>Total Donations: </strong>₹{data.donations}</p>
 
+
+    </div>
+)
 
 })
