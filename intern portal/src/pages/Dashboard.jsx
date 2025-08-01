@@ -3,7 +3,7 @@ import axios from "axios";
 
 export default function Dashboard() {
     const [data, setData] = useState({});
-}
+
 
 useEffect (()=> {
     axios.get("https://api.example.com/data")
@@ -17,8 +17,12 @@ return (
         <p><strong>Referral Code:</strong> {data.referralCode}</p>
         <p><strong>Total Donations: </strong>₹{data.donations}</p>
         <h3>🎁 Rewards / Unlockables</h3>
-
+        <ul>
+        <li>🔓 Bronze Badge – 10 Donations</li>
+        <li>🔓 Silver Badge – 50 Donations</li>
+        <li>🔓 Gold Badge – 100 Donations</li>
+        </ul>
     </div>
-)
+);
 
-})
+}
