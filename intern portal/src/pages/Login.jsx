@@ -3,17 +3,19 @@ import './Login.css';
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
-    const handleLogin = () => {
-        navigate("/dashboard");
-    };
+    // const handleLogin = () => {
+    //     navigate("/dashboard");
+    // }; 
     return (
        <div className="page-container">
-        <div>
-            <h2>Intern Login</h2>
-            <button onClick={handleLogin}>Login as Nausheen</button>
-       </div>
+        <h1>Intern Login</h1>
+         <form className="login-form">
+        <input type="text" placeholder="Enter Name" required />
+        <input type="email" placeholder="Enter Email" required />
+        <button type="submit">Login</button>
+      </form>
      </div>
     );
 }
