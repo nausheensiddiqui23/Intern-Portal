@@ -8,11 +8,11 @@ export default function Login() {
         navigate("/dashboard");
     };
     return (
-        <div className="page-container">
+       <div className="page-container">
         <div>
             <h2>Intern Login</h2>
             <button onClick={handleLogin}>Login as Nausheen</button>
-        </div>
-        </div>
+       </div>
+     </div>
     );
 }
