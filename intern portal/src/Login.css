@@ -7,3 +7,13 @@
     color: #f8f8f2;
     font-family: 'Segoe UI' , sans-serif;
 }
+
+.login-box{
+    text-align: center;
+}
+
+.login-box h2 {
+    color: #fbeec1;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
