@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
+import './App.css';
+
 import Dashboard from './pages/Dashboard';
 
 function App() {
@@ -11,7 +13,7 @@ function App() {
       </Routes>
     </Router>
   );
-  
+
 }
 
 export default App;
