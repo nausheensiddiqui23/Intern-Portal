@@ -27,4 +27,7 @@
    justify-content: center;
 }
 .login-form input, .login-form button {
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
 }
