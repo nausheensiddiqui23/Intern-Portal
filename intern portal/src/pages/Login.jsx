@@ -9,7 +9,7 @@ export default function Login() {
     //     navigate("/dashboard");
     // }; 
     return (
-       <div className="page-container">
+       <div className="login-container">
         <h1>Intern Login</h1>
          <form className="login-form">
         <input type="text" placeholder="Enter Name" required />
