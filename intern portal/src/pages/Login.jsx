@@ -3,11 +3,12 @@ import './Login.css';
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
-    // const handleLogin = () => {
-    //     navigate("/dashboard");
-    // }; 
+    const handleLogin = (e) => {
+
+        navigate("/dashboard");
+    }; 
     return (
        <div className="login-container">
         <h1>Intern Login</h1>
