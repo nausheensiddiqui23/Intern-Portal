@@ -3,13 +3,14 @@ import './Login.css';
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+  const [name, setName] = useState('');
     const navigate = useNavigate();
 
     const handleLogin = (e) => {
         e.preventDefault();
         navigate("/dashboard");
     }; 
-    
+
     return (
        <div className="login-container">
         <h1>Intern Login</h1>
