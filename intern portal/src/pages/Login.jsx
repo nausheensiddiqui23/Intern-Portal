@@ -9,6 +9,7 @@ export default function Login() {
         e.preventDefault();
         navigate("/dashboard");
     }; 
+    
     return (
        <div className="login-container">
         <h1>Intern Login</h1>
