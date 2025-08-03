@@ -16,13 +16,8 @@ export default function Login() {
     }; 
 
     return (
-       <div className="login-container">
+       <form>
         <h1>Intern Login</h1>
-         <form className="login-form">
-        <input type="text" placeholder="Enter Name" required />
-        <input type="email" placeholder="Enter Email" required />
-        <button type="submit">Login</button>
-      </form>
-     </div>
+       </form>>
     );
 }
