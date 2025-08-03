@@ -6,7 +6,7 @@ export default function Login() {
     const navigate = useNavigate();
 
     const handleLogin = (e) => {
-
+        e.preventDefault();
         navigate("/dashboard");
     }; 
     return (
