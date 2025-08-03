@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 
 export default function Dashboard() {
+  const name = localStorage.getItem('internName') || 'Intern';
+
   return (
-    <div style={{ padding: "2rem", color: "#fff", background: "#121212", minHeight: "100vh" }}>
-      <h1>Welcome, Intern</h1>
-      <p>Referral Code: <strong>nausheen2025</strong></p>
+    <div>
+      <h1>Welcome, {name}</h1>
+      <p>Referral Code: {name.toLowerCase()}2025</p>
       <p>Total Donations Raised: ₹5000</p>
-      
-      <h2>Rewards / Unlockables</h2>
+      <h2>Rewards</h2>
       <ul>
-        <li>🎖️ Bronze Badge - Achieved</li>
-        <li>🥈 Silver Badge - Locked</li>
-        <li>🎁 Custom T-shirt - Locked</li>
+        <li>🥇 Bronze Badge</li>
+        <li>🎁 Gift Voucher</li>
       </ul>
     </div>
   );
