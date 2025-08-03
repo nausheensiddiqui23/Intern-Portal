@@ -1,28 +1,18 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
 
 export default function Dashboard() {
-    const [data, setData] = useState({});
-
-
-useEffect (()=> {
-    axios.get("https://api.example.com/data")
-    .then(res => setData(res.data))
-    .catch(err => console.error(err));
-}, []);
-
-return (
-    <div>
-        <h1>Welcome, {data.name}</h1>
-        <p><strong>Referral Code:</strong> {data.referralCode}</p>
-        <p><strong>Total Donations: </strong>₹{data.donations}</p>
-        <h3>🎁 Rewards / Unlockables</h3>
-        <ul>
-        <li>🔓 Bronze Badge – 10 Donations</li>
-        <li>🔓 Silver Badge – 50 Donations</li>
-        <li>🔓 Gold Badge – 100 Donations</li>
-        </ul>
+  return (
+    <div style={{ padding: "2rem", color: "#fff", background: "#121212", minHeight: "100vh" }}>
+      <h1>Welcome, Intern</h1>
+      <p>Referral Code: <strong>nausheen2025</strong></p>
+      <p>Total Donations Raised: ₹5000</p>
+      
+      <h2>Rewards / Unlockables</h2>
+      <ul>
+        <li>🎖️ Bronze Badge - Achieved</li>
+        <li>🥈 Silver Badge - Locked</li>
+        <li>🎁 Custom T-shirt - Locked</li>
+      </ul>
     </div>
-);
-
+  );
 }
