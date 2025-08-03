@@ -16,8 +16,17 @@ export default function Login() {
     }; 
 
     return (
-       <form>
+       <form onSubmit={handleLogin}>
         <h1>Intern Login</h1>
-       </form>>
+        <input
+        type="text"
+        placeholder="Enter your name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        required
+        />
+        
+        <input type="email" placeholder="Enter your email" required />
+       </form>
     );
 }
