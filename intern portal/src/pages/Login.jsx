@@ -8,7 +8,11 @@ export default function Login() {
 
     const handleLogin = (e) => {
         e.preventDefault();
+        if (name) {
+          localStorage.setItem('internName', name);
+        
         navigate("/dashboard");
+        }
     }; 
 
     return (
